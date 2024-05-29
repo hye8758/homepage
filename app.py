@@ -17,6 +17,8 @@ def get_conversation_chain(_db, _model, user_question, _press_release_info):
 def start(_db, _model, _press_release_info):
     #st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
 
+    st.write("저의 홈페이지에 오신것을 환영합니다.")
+    
     user_question = st.text_input("질의사항 입력", placeholder="여기에 입력해 주세요(입력 후 엔터)")
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
