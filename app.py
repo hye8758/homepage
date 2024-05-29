@@ -31,5 +31,8 @@ def start(_db, _model, _press_release_info):
         st.session_state.conversation = get_conversation_chain(_db, _model, user_question, _press_release_info)
 
 
-if __name__ == "__main__":   
+if __name__ == "__main__": 
+    _db = ""
+    _model =""
+    _press_release_info = ""
     start(_db, _model, _press_release_info)
